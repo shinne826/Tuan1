@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: auto;
+        padding: 0px;
+    }
+    body{
+        background-image: url(https://mondaycareer.com/wp-content/uploads/2020/11/background-%C4%91%E1%BA%B9p-3-1-1024x682.jpg);
+    }
+    .wrapper{
+        height: 700px;
+        width: 1089px;
+    }
+    header{
+        height: 150px;
+        width: 1089px;
+        background-image: url(https://hoaidoan.vn/wp-content/uploads/2021/03/background-dep-5.png);
+    } 
+    nav{    
+        text-align: center;
+        height: 50px;
+        width: 1089px;
+        background-color: rgb(223, 57, 223);
+        line-height: 50px;
+    }
+    .content{
+        height: 400px;
+        width: 1089;
+        background-color: pink;
+    }
+    aside{
+        height: 100%;
+        width: 40%;
+        background-color: yellow;
+        float: left;
+    }
+    section{
+        height: 100px;
+        width: 60%;
+        background-color: orange;
+        float: left;
+    }
+    footer{
+        height: 100px;
+        width: 100%;
+        background-color: red;
+    }
+    .menu li{
+        height: 100%;
+        width: 150px;
+        float: left;
+        list-style: none;
+        text-indent: 15px;
+        position: relative;
+        background-color: mediumorchid;
+    }
+    a{  
+        text-decoration: none;
+        font-weight: bold;
+        color: green;
+    }
+    .menu li:hover {
+        background-color: rgb(219, 40, 40);
+    }
+    li:hover>a {
+        color: teal;
+        font-style: italic;
+        font-weight: bold;
+    }
+    nav span #email {
+        padding: 3px;
+    }
+    nav span #btn{
+        padding: 3px;
+        border-radius: 15%;
+    }
+    .clear{
+        clear: both;
+    }
+    .menu li .submenu{
+        position: absolute;
+        display: none;
+    }
+    .menu li:hover .submenu{
+        display: block;
+    }
+</style>
+<body >
+    <div class="wrapper">
+        <header></header>
+        <nav>
+            <ul class="menu">
+                <li><a href="http://24h.com.vn">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT</a>
+                    <ul class="submenu">
+                        <li><a href="">INTERNET</a></li>
+                        <li><a href="">PHONE</a></li>
+                        <li><a href="">CELLPHONE</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>    
+            </ul>
+            <form action="" autocomplete="off">
+                <span >
+                    <label for="dn">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="Nhap Email">
+                    <input type="submit" name="sign in" id="btn">
+                </span>
+            </form>
+        </nav>
+        <div class="clear"></div>
+        <div class="content">
+            <aside>
+
+            </aside>
+            <section>
+
+            </section>
+        </div>
+        <div class="clear"></div>
+        <footer></footer>
+        <div class="claer"></div>
+    </div>  
+</body>
+</html>
